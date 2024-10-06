@@ -1,0 +1,32 @@
+{
+    "project_name": "BIRB",
+    "versioning": {
+        "auto_increment": true,
+        "increment_type": "patch",
+        "current_version": "0.0.1"
+    },
+    "build": {
+        "custom_build_command": "null",
+        "platform_build_commands": {
+            "windows": "pyinstaller --onefile birb.py",
+            "linux": null,
+            "macos": null,
+            "custom": "null"
+        },
+        "output_directory": "./build",
+        "clean_before_build": true
+    },
+    "git_integration": {
+        "repo_name": "BIRB",
+        "branch": "main",
+        "auto_commit": true,
+        "commit_message_template": "Release {version} for {platform}",
+        "vcs_push_command": [
+            "git init",
+            "git add .",
+            "git commit -m \"Initial Commit\"",
+            "git remote add origin BIRB",
+            "git push -u origin main"
+        ]
+    }
+}

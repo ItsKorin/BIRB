@@ -1,0 +1,28 @@
+{
+    "versioning": {
+      "auto_increment": true,
+      "increment_type": "patch",
+      "version_prefix": "v",
+      "custom_version_format": false,
+      "custom_version_template": "{major}.{minor}.{patch}-{build}"
+    },
+    "build": {
+      "default_platforms": ["windows", "linux", "macos"],
+      "output_directory": "./builds",
+      "include_source_maps": true,
+      "optimize_builds": true,
+      "clean_old_builds": false,
+      "default_build_engine": "manual",
+      "default_build_script": ""
+    },
+    "notifications": {
+      "on_success": true,
+      "on_failure": true,
+      "sound_notifications": false
+    },
+    "git_integration": {
+      "auto_commit": true,
+      "commit_message_template": "Build {version} - {platform}"
+    }
+  }
+  
