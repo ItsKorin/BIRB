@@ -25,7 +25,7 @@
             "git init",
             "git add .",
             "git commit -m \"Initial Commit\"",
-            "git remote add origin BIRB",
+            "git remote set-url origin https://github.com/ItsKorin/BIRB.git",
             "git push -u origin master"
         ]
     }
